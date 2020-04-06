@@ -1,0 +1,81 @@
+<h1>RADI GOVNO!</h1>
+
+<nz-timeline>
+  <nz-timeline-item
+    >Little Description
+    <button nz-button [nzType]="'primary'" (click)="showModal()">
+      <span>Show Modal</span>
+    </button>
+    <nz-modal
+      [(nzVisible)]="isVisible"
+      nzTitle="Introduction"
+      (nzOnCancel)="handleCancel()"
+      (nzOnOk)="handleOk()"
+    >
+      <p>First of all, thank you for the opportunity to do this test :)</p>
+      <p>
+        It was interesting and seemed quite easy at the beginning until i read
+        it all thoroughly
+      </p>
+      <p>
+        There were some things I didn't understand and went the wrong direction
+        for sure
+      </p>
+    </nz-modal></nz-timeline-item
+  >
+
+  <nz-timeline-item>
+    Things I didn't understand
+    <button nz-button [nzType]="'primary'" (click)="showModalOne()">
+      <span>Show Modal</span>
+    </button>
+    <nz-modal
+      [(nzVisible)]="isVisibleOne"
+      nzTitle="Introduction"
+      (nzOnCancel)="handleCancelOne()"
+      (nzOnOk)="handleOkOne()"
+    >
+      <p>
+        I was confused with word plugin at the beginning, and didn't understand
+        the Plugins should run in an isolated environment protecting the users
+        from malicious code part and that it should be remote.
+      </p>
+      <p>
+        Generally, I didn't get it. except the part that it should be built with
+        Angular(witch I failed possibly-more in the next modal :D)
+      </p>
+      <p>
+        Was it only needed to build one handler.ts file create my interfaces and
+        then in service when it's called just pars and return items?
+      </p>
+    </nz-modal>
+  </nz-timeline-item>
+  <nz-timeline-item>
+    What i did wrong
+    <button nz-button [nzType]="'primary'" (click)="showModalTwo()">
+      <span>Show Modal</span>
+    </button>
+    <nz-modal
+      [(nzVisible)]="isVisibleTwo"
+      nzTitle="Introduction"
+      (nzOnCancel)="handleCancelTwo()"
+      (nzOnOk)="handleOkTwo()"
+    >
+      <p>
+        First just to say there was more than enough time to finish this but my
+        organization was terrible. I had to much work on my job, plus did some
+        freelance with friend.
+      </p>
+      <p>
+        I understand the task was to create some npm package that would do some
+        magic :P And I was like why not do web component(terrible idea)
+      </p>
+      <p>
+        So I did this in one night. I overkilled myself, there is still work to
+        be done here but I'm just tired.Tnx for the chance guys and I hope we
+        will talk again maybe :)
+      </p>
+      <h4>Ps. I'll put what works in gitrepo and how it works</h4>
+    </nz-modal>
+  </nz-timeline-item>
+</nz-timeline>
